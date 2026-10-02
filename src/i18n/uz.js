@@ -16,6 +16,7 @@ export default {
     catalog: "Katalog",
     reviews: "Sharhlar",
     delivery: "Yetkazib berish",
+    locations: "Filiallar",
     contacts: "Kontaktlar",
     order: "Buyurtma berish",
     call: "Qoʻngʻiroq qilish",

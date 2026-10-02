@@ -16,6 +16,7 @@ export default {
     catalog: "Каталог",
     reviews: "Отзывы",
     delivery: "Доставка",
+    locations: "Филиалы",
     contacts: "Контакты",
     order: "Заказать",
     call: "Позвонить",

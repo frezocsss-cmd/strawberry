@@ -13,6 +13,7 @@ const LINKS = [
   { id: "catalog", label: "catalog", href: "#catalog" },
   { id: "reviews", label: "reviews", href: "#reviews" },
   { id: "delivery", label: "delivery", href: "#delivery" },
+  { id: "locations", label: "locations", href: "#locations" },
   { id: "contacts", label: "contacts", href: "#contacts" },
 ];
 
