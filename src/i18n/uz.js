@@ -35,7 +35,7 @@ export default {
     subtitle:
       "Darhol tatib koʻrmoqchi boʻladigan sovgʻa. Yumshoq shokoladli yangi qulupnay, chiroyli qadoq va 1,5 soatda yetkazib berish.",
     orderNow: "Hozir buyurtma berish",
-    viewCatalog: "Katalogni koʻrish",
+    viewCatalog: "Mahsulotlarni koʻrish",
     giftBadge: "Tayyor sovgʻa",
     ribbon: "Lenta + ochilish",
     reviewsBadge: "20 000+ sharh",
@@ -51,8 +51,8 @@ export default {
   ],
 
   catalog: {
-    eyebrow: "Katalog",
-    title: "Bizning shirin sovgʻlarimiz",
+    eyebrow: "Mahsulotlar",
+    title: "Mahsulotlarimiz",
     subtitle: "Kimni xursand qilishni xohlaganlar uchun shokoladli yangi qulupnay.",
     notFoundTitle: "Kerakli toʻplamni topolmadingizmi?",
     notFoundText: "Sabab va byudjetingizga mos individual buyurtma yigʻamiz.",
