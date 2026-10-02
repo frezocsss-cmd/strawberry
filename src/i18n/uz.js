@@ -13,7 +13,7 @@ export default {
 
   nav: {
     home: "Bosh sahifa",
-    catalog: "Katalog",
+    products: "Mahsulotlar",
     reviews: "Sharhlar",
     delivery: "Yetkazib berish",
     locations: "Filiallar",

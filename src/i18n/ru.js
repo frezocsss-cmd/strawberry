@@ -13,7 +13,7 @@ export default {
 
   nav: {
     home: "Главная",
-    catalog: "Каталог",
+    products: "Продукция",
     reviews: "Отзывы",
     delivery: "Доставка",
     locations: "Филиалы",

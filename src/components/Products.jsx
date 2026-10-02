@@ -22,7 +22,7 @@ export default function Products() {
         />
 
         <div className="mt-10 grid gap-5 sm:mt-14 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
-          {t.products.map((product, index) => (
+          {(t.products || []).map((product, index) => (
             <Reveal key={product.id} delay={(index % 3) * 110}>
               <ProductCard product={product} />
             </Reveal>
