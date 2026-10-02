@@ -1,5 +1,3 @@
-import { img01, img04, img05, img06, img07, img08 } from "../data/assets";
-
 export default {
   code: "ru",
   htmlLang: "ru",
@@ -69,42 +67,42 @@ export default {
       title: "Классика в молочном",
       description: "Свежая клубника, покрытая нежным молочным шоколадом. Самый популярный выбор.",
       badge: "Хит",
-      image: img01,
+      image: "",
     },
     {
       id: 2,
       title: "Тёмный шоколад",
       description: "Горький 70% шоколад и спелые ягоды — вкус, который запоминается.",
       badge: null,
-      image: img04,
+      image: "",
     },
     {
       id: 3,
       title: "Ягодный микс",
       description: "Клубника, голубика и малина в одной коробке — праздник в каждой ягоде.",
       badge: "Новинка",
-      image: img05,
+      image: "",
     },
     {
       id: 4,
       title: "Подарочный набор",
       description: "Большая коробка с лентой и открыткой. Готовый подарок без лишних хлопот.",
       badge: null,
-      image: img06,
+      image: "",
     },
     {
       id: 5,
       title: "Цветочная композиция",
       description: "Ягоды, шоколад и мини-букет в стильной упаковке. Для особых случаев.",
       badge: "Premium",
-      image: img07,
+      image: "",
     },
     {
       id: 6,
       title: "Ягодный дуэт",
       description: "Две упаковки по 12 ягод — чтобы попробовать два вкуса сразу.",
       badge: null,
-      image: img08,
+      image: "",
     },
   ],
 

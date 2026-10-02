@@ -5,7 +5,7 @@ import Button from "./Button";
 import BrandLogo from "./icons/BrandLogo";
 import useLang from "../i18n/useLang";
 import { CONTACTS } from "../data/brand";
-import { img06 } from "../data/assets";
+
 
 const POINT_ICONS = { yunusabad: MapPin, chilanzar: MapPin, speed: Truck, gift: Gift };
 
@@ -91,7 +91,7 @@ export default function Delivery() {
           <Reveal direction="right" delay={120} className="order-1 lg:order-2">
             <div className="relative h-full min-h-[19rem] overflow-hidden rounded-[2rem] border border-white/70 shadow-[var(--shadow-lift)] sm:min-h-[22rem]">
               <img
-                src={img06}
+                src=""
                 alt={t.delivery.alt}
                 width="1440"
                 height="2560"

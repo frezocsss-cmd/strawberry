@@ -5,7 +5,7 @@ import TelegramIcon from "./icons/TelegramIcon";
 import Reveal from "./Reveal";
 import useLang from "../i18n/useLang";
 import { BRAND, CONTACTS } from "../data/brand";
-import { img07 } from "../data/assets";
+
 
 export default function CTA() {
   const { t } = useLang();
@@ -16,7 +16,7 @@ export default function CTA() {
         <Reveal direction="zoom" className="relative">
           <div className="relative isolate overflow-hidden rounded-[2rem] bg-choco-950 px-6 py-14 sm:rounded-[2.5rem] sm:px-10 sm:py-20">
             <img
-              src={img07}
+              src=""
               alt=""
               aria-hidden="true"
               width="1440"

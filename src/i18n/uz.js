@@ -1,5 +1,3 @@
-import { img01, img04, img05, img06, img07, img08 } from "../data/assets";
-
 export default {
   code: "uz",
   htmlLang: "uz",
@@ -69,42 +67,42 @@ export default {
       title: "Sutli shokolad klassikasi",
       description: "Yumshoq sutli shokolad bilan qoplangan yangi qulupnay. Eng mashhur tanlov.",
       badge: "Hit",
-      image: img01,
+      image: "",
     },
     {
       id: 2,
       title: "Qorongʻi shokolad",
       description: "70% achlik shokoladi va pishgan mevalar — eslab qoladigan taʻm.",
       badge: null,
-      image: img04,
+      image: "",
     },
     {
       id: 3,
       title: "Mevalar aralashmasi",
       description: "Qulupnay, koʻkrizak va malina bir qutida — har bir mevada bayram.",
       badge: "Yangilik",
-      image: img05,
+      image: "",
     },
     {
       id: 4,
       title: "Sovgʻa toʻplami",
       description: "Lenta va ochilish bilan katta quti. Qoʻshimcha xarajatlarsiz tayyor sovgʻa.",
       badge: null,
-      image: img06,
+      image: "",
     },
     {
       id: 5,
       title: "Gulli kompozitsiya",
       description: "Mevalar, shokolad va kichik gul toʻplami chiroyli qadoqda. Maxsus holatlar uchun.",
       badge: "Premium",
-      image: img07,
+      image: "",
     },
     {
       id: 6,
       title: "Ikki xil meva",
       description: "Ikki xil taʻmni bir vaqtda sinab koʻrish uchun 12 ta mevalik ikki qadoq.",
       badge: null,
-      image: img08,
+      image: "",
     },
   ],
 
