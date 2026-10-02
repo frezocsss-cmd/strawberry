@@ -8,6 +8,7 @@ import InstagramSection from "./components/InstagramSection";
 import Delivery from "./components/Delivery";
 import CTA from "./components/CTA";
 import Contact from "./components/Contact";
+import Locations from "./components/Locations";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import useScrollReveal from "./hooks/useScrollReveal";
@@ -28,6 +29,7 @@ export default function App() {
         <Delivery />
         <CTA />
         <Contact />
+        <Locations />
       </main>
       <Footer />
       <ScrollToTop />

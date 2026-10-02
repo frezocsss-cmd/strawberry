@@ -255,6 +255,17 @@ export default {
     adminLabel: "Админ",
   },
 
+  locations: {
+    eyebrow: "Филиалы",
+    title: "Наши филиалы",
+    subtitle: "Выберите ближайший к нам филиал",
+    branchLabel: "Филиал",
+    phoneLabel: "Телефон",
+    hoursLabel: "Часы работы",
+    mapsBtn: "Google Maps",
+    callBtn: "Позвонить",
+  },
+
   footer: {
     madeIn: "Сделано с 🍓 в Ташкенте",
     channel: "Telegram-канал",

@@ -255,6 +255,17 @@ export default {
     adminLabel: "Admin",
   },
 
+  locations: {
+    eyebrow: "Filialar",
+    title: "Filiallarimiz",
+    subtitle: "Bizga eng yaqin filialni tanlang",
+    branchLabel: "Filial",
+    phoneLabel: "Telefon",
+    hoursLabel: "Ish vaqti",
+    mapsBtn: "Google Maps",
+    callBtn: "Qoʻngʻiroq qilish",
+  },
+
   footer: {
     madeIn: "🍓 bilan Toshkentda yasalgan",
     channel: "Telegram kanal",
