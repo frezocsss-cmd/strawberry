@@ -110,7 +110,7 @@ export default function Hero() {
 
               <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/70 bg-white shadow-[var(--shadow-lift)] sm:rounded-[2.5rem]">
                 <img
-                  src="/chocoberry-images/750.ming.HEIC"
+                  src="/assets/assets/chocoberry-images/750.ming.HEIC"
                   width="1440"
                   height="2560"
                   fetchPriority="high"
@@ -146,7 +146,7 @@ export default function Hero() {
 
               <div className="absolute -top-6 -left-6 -z-10 hidden overflow-hidden rounded-2xl border border-white/70 shadow-[var(--shadow-soft)] lg:block lg:w-32 xl:w-40">
                 <img
-                  src="/chocoberry-images/650_ming.JPG"
+                  src="/assets/assets/chocoberry-images/650_ming.JPG"
                   width="720"
                   height="1280"
                   loading="lazy"

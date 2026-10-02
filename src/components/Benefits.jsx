@@ -19,7 +19,7 @@ export default function Benefits() {
             <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
               <div className="relative aspect-[3/4] overflow-hidden rounded-[2rem] border border-white/70 shadow-[var(--shadow-lift)]">
                 <img
-                  src="/chocoberry-images/1.200_ming.JPG"
+                  src="/assets/assets/chocoberry-images/1.200_ming.JPG"
                   alt={t.benefits.alt}
                   width="720"
                   height="1280"
