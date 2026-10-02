@@ -5,6 +5,7 @@ import ImagePlaceholder from "./ImagePlaceholder";
 import Reveal from "./Reveal";
 import useLang from "../i18n/useLang";
 import { BRAND } from "../data/brand";
+import { heroImg, heroSideImg } from "../data/assets";
 
 
 const AVATARS = ["🍓", "🍫", "🎀"];
@@ -110,7 +111,19 @@ export default function Hero() {
               />
 
               <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/70 bg-white shadow-[var(--shadow-lift)] sm:rounded-[2.5rem]">
-                <ImagePlaceholder className="size-full" />
+                {heroImg ? (
+                  <img
+                    src={heroImg}
+                    alt={`${BRAND.name} — shokoladli qulupnay`}
+                    width="1440"
+                    height="2560"
+                    fetchPriority="high"
+                    decoding="async"
+                    className="size-full object-cover transition-transform duration-[900ms] ease-out hover:scale-[1.04]"
+                  />
+                ) : (
+                  <ImagePlaceholder className="size-full" />
+                )}
                 <div
                   aria-hidden="true"
                   className="absolute inset-0 bg-linear-to-t from-choco-950/45 via-transparent to-transparent"
@@ -139,7 +152,20 @@ export default function Hero() {
               </div>
 
               <div className="absolute -top-6 -left-6 -z-10 hidden overflow-hidden rounded-2xl border border-white/70 shadow-[var(--shadow-soft)] lg:block lg:w-32 xl:w-40">
-                <ImagePlaceholder className="aspect-[3/4] w-full" />
+                {heroSideImg ? (
+                  <img
+                    src={heroSideImg}
+                    alt=""
+                    aria-hidden="true"
+                    width="720"
+                    height="1280"
+                    loading="lazy"
+                    decoding="async"
+                    className="aspect-[3/4] w-full object-cover"
+                  />
+                ) : (
+                  <ImagePlaceholder className="aspect-[3/4] w-full" />
+                )}
               </div>
             </div>
           </Reveal>

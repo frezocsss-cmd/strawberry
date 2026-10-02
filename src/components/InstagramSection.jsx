@@ -20,7 +20,7 @@ export default function InstagramSection() {
           subtitle={subtitle}
         />
 
-        <Reveal delay={140} className="mt-10 grid grid-cols-2 gap-2.5 sm:mt-12 sm:grid-cols-4 sm:gap-3">
+        <Reveal delay={140} className="mt-10 grid grid-cols-3 gap-2.5 sm:mt-12 sm:gap-3">
           {GALLERY.map((image, index) => (
             <a
               key={index}

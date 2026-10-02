@@ -29,6 +29,26 @@ function parseName(basename) {
   return "";
 }
 
+// Card nomini shu yerda o'zgartiring: kalit = rasm faylining aniq nomi
+export const NAMES = {
+  "200_ming_mini.JPG": "Mini",
+  "300_ming.JPG": "Клубничная нежность",
+  "450_ming.jpg": "Сладкий комплимент",
+  "550_ming.jpg": "Шоколадная классика",
+  "650_ming.JPG": "Клубничное сердце",
+  "650ming.jpg": "Романтика",
+  "i-loveyou_650ming.jpg": "I love you",
+  "700_ming.jpg": "Onam",
+  "750.ming.jpg": "Шоколадный вечер",
+  "ilove-you_750ming.JPG": "Люблю тебя",
+  "800_ming.JPG": "Шоколадный букет",
+  "850_ming.jpg": "Ягодное наслаждение",
+  "1_mln.jpg": "Премиум коллекция",
+  "1.200_ming.JPG": "Ассорти",
+  "1.500_ming.jpg": "Большая коробка 60 см",
+  "3_mln.JPG": "Королевский набор",
+};
+
 export const PRODUCTS = Object.entries(modules)
   .map(([path, image]) => {
     const basename = path.split("/").pop();
@@ -38,7 +58,7 @@ export const PRODUCTS = Object.entries(modules)
       id: basename,
       image,
       price,
-      name: parseName(basename),
+      name: basename in NAMES ? NAMES[basename] : parseName(basename),
     };
   })
   .filter(Boolean)
