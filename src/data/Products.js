@@ -1,67 +1,45 @@
-[
-  {
-    "image": "",
-    "name": "Мини",
-    "price": 200000
-  },
-  {
-    "image": "",
-    "name": "",
-    "price": 300000
-  },
-  {
-    "image": "",
-    "name": "",
-    "price": 450000
-  },
-  {
-    "image": "",
-    "name": "",
-    "price": 550000
-  },
-  {
-    "image": "",
-    "name": "I love you",
-    "price": 650000
-  },
-  {
-    "image": "",
-    "name": "Onam",
-    "price": 700000
-  },
-  {
-    "image": "",
-    "name": "Люблю тебя",
-    "price": 750000
-  },
-  {
-    "image": "",
-    "name": "",
-    "price": 800000
-  },
-  {
-    "image": "",
-    "name": "Love",
-    "price": 850000
-  },
-  {
-    "image": "",
-    "name": "",
-    "price": 1000000
-  },
-  {
-    "image": "",
-    "name": "Ассорти",
-    "price": 1200000
-  },
-  {
-    "image": "",
-    "name": "Большая коробка 60 см",
-    "price": 1500000
-  },
-  {
-    "image": "",
-    "name": "",
-    "price": 3000000
+const modules = import.meta.glob("../assets/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}", {
+  eager: true,
+  query: "?url",
+  import: "default",
+});
+
+function parsePrice(basename) {
+  const name = basename.toLowerCase();
+
+  const millions = name.match(/(\d[\d._]*)\s*(?:mln|mn)/);
+  if (millions) {
+    const value = Number(millions[1].replace(/[^\d]/g, ""));
+    return value ? value * 1_000_000 : null;
   }
-]
+
+  const thousands = name.match(/(\d[\d._]*)\s*ming/);
+  if (thousands) {
+    const value = Number(thousands[1].replace(/[^\d]/g, ""));
+    return value ? value * 1_000 : null;
+  }
+
+  return null;
+}
+
+function parseName(basename) {
+  const name = basename.toLowerCase();
+  if (name.includes("love")) return "I love you";
+  if (name.includes("mini")) return "Mini";
+  return "";
+}
+
+export const PRODUCTS = Object.entries(modules)
+  .map(([path, image]) => {
+    const basename = path.split("/").pop();
+    const price = parsePrice(basename);
+    if (price == null) return null;
+    return {
+      id: basename,
+      image,
+      price,
+      name: parseName(basename),
+    };
+  })
+  .filter(Boolean)
+  .sort((a, b) => a.price - b.price);

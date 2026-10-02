@@ -3,6 +3,7 @@ import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 import Button from "./Button";
 import useLang from "../i18n/useLang";
+import { PRODUCTS } from "../data/Products";
 
 export default function Products() {
   const { t } = useLang();
@@ -22,9 +23,9 @@ export default function Products() {
         />
 
         <div className="mt-10 grid gap-5 sm:mt-14 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
-          {(t.products || []).map((product, index) => (
+          {PRODUCTS.map((product, index) => (
             <Reveal key={product.id} delay={(index % 3) * 110}>
-              <ProductCard product={product} />
+              <ProductCard product={{ ...product, title: product.name || t.catalog.itemName }} />
             </Reveal>
           ))}
         </div>
