@@ -1,4 +1,4 @@
-import { logoImg, img01 } from "./assets";
+import { logoImg } from "./assets";
 
 export const BRAND = {
   name: "CHOCOBERRY_N1",
@@ -35,4 +35,4 @@ export const LOCATIONS = [
     maps: "https://www.google.com/maps?q=41.354301,69.335297&ll=41.354301,69.335297&z=16"},
 ];
 
-export const GALLERY = [img01];
+export const GALLERY = ["", "", "", ""];

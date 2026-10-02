@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
+import ImagePlaceholder from "./ImagePlaceholder";
 import useLang from "../i18n/useLang";
 
 
@@ -18,15 +19,7 @@ export default function Benefits() {
           <Reveal direction="left" className="relative order-2 lg:order-1">
             <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
               <div className="relative aspect-[3/4] overflow-hidden rounded-[2rem] border border-white/70 shadow-[var(--shadow-lift)]">
-                <img
-                  src="/assets/assets/chocoberry-images/1.200_ming.JPG"
-                  alt={t.benefits.alt}
-                  width="720"
-                  height="1280"
-                  loading="lazy"
-                  decoding="async"
-                  className="size-full object-cover"
-                />
+                <ImagePlaceholder className="size-full" />
               </div>
               <div className="glass-panel absolute -right-3 -bottom-6 rounded-2xl border border-white/70 px-4 py-3 shadow-[var(--shadow-soft)] sm:-right-8">
                 <p className="font-display text-2xl leading-none font-bold text-choco-950">

@@ -15,16 +15,6 @@ export default function CTA() {
       <div className="container-page">
         <Reveal direction="zoom" className="relative">
           <div className="relative isolate overflow-hidden rounded-[2rem] bg-choco-950 px-6 py-14 sm:rounded-[2.5rem] sm:px-10 sm:py-20">
-            <img
-              src=""
-              alt=""
-              aria-hidden="true"
-              width="1440"
-              height="2560"
-              loading="lazy"
-              decoding="async"
-              className="absolute inset-0 -z-10 size-full object-cover opacity-25"
-            />
             <div
               aria-hidden="true"
               className="absolute inset-0 -z-10 bg-linear-to-br from-choco-950/95 via-choco-900/85 to-berry-700/70"

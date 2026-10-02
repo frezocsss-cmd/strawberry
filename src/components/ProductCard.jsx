@@ -1,4 +1,5 @@
 import Button from "./Button";
+import ImagePlaceholder from "./ImagePlaceholder";
 import useLang from "../i18n/useLang";
 
 export default function ProductCard({ product }) {
@@ -9,15 +10,19 @@ export default function ProductCard({ product }) {
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/70 bg-white shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[var(--shadow-lift)]">
       <div className="relative aspect-[4/3] overflow-hidden bg-cream-2 sm:aspect-[5/4]">
-        <img
-          src={image}
-          alt={displayTitle}
-          width="1440"
-          height="2560"
-          loading="lazy"
-          decoding="async"
-          className="size-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.07]"
-        />
+        {image ? (
+          <img
+            src={image}
+            alt={displayTitle}
+            width="1440"
+            height="2560"
+            loading="lazy"
+            decoding="async"
+            className="size-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.07]"
+          />
+        ) : (
+          <ImagePlaceholder className="size-full" />
+        )}
         {badge ? (
           <span className="absolute top-3 left-3 rounded-full bg-choco-950/85 px-3 py-1 text-[0.68rem] font-bold tracking-[0.12em] text-cream uppercase backdrop-blur-sm">
             {badge}

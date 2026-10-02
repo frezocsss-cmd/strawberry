@@ -3,6 +3,7 @@ import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 import Button from "./Button";
 import BrandLogo from "./icons/BrandLogo";
+import ImagePlaceholder from "./ImagePlaceholder";
 import useLang from "../i18n/useLang";
 import { CONTACTS } from "../data/brand";
 
@@ -90,15 +91,7 @@ export default function Delivery() {
 
           <Reveal direction="right" delay={120} className="order-1 lg:order-2">
             <div className="relative h-full min-h-[19rem] overflow-hidden rounded-[2rem] border border-white/70 shadow-[var(--shadow-lift)] sm:min-h-[22rem]">
-              <img
-                src=""
-                alt={t.delivery.alt}
-                width="1440"
-                height="2560"
-                loading="lazy"
-                decoding="async"
-                className="absolute inset-0 size-full object-cover"
-              />
+              <ImagePlaceholder className="absolute inset-0 size-full" tone="dark" />
               <div
                 aria-hidden="true"
                 className="absolute inset-0 bg-linear-to-t from-choco-950/88 via-choco-950/35 to-transparent"

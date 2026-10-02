@@ -1,6 +1,7 @@
 import { ArrowDown, Sparkles, Star } from "lucide-react";
 import Button from "./Button";
 import BrandLogo from "./icons/BrandLogo";
+import ImagePlaceholder from "./ImagePlaceholder";
 import Reveal from "./Reveal";
 import useLang from "../i18n/useLang";
 import { BRAND } from "../data/brand";
@@ -109,14 +110,7 @@ export default function Hero() {
               />
 
               <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/70 bg-white shadow-[var(--shadow-lift)] sm:rounded-[2.5rem]">
-                <img
-                  src="/assets/assets/chocoberry-images/750.ming.HEIC"
-                  width="1440"
-                  height="2560"
-                  fetchPriority="high"
-                  decoding="async"
-                  className="size-full object-cover transition-transform duration-[900ms] ease-out hover:scale-[1.04]"
-                />
+                <ImagePlaceholder className="size-full" />
                 <div
                   aria-hidden="true"
                   className="absolute inset-0 bg-linear-to-t from-choco-950/45 via-transparent to-transparent"
@@ -145,14 +139,7 @@ export default function Hero() {
               </div>
 
               <div className="absolute -top-6 -left-6 -z-10 hidden overflow-hidden rounded-2xl border border-white/70 shadow-[var(--shadow-soft)] lg:block lg:w-32 xl:w-40">
-                <img
-                  src="/assets/assets/chocoberry-images/650_ming.JPG"
-                  width="720"
-                  height="1280"
-                  loading="lazy"
-                  decoding="async"
-                  className="aspect-[3/4] w-full object-cover"
-                />
+                <ImagePlaceholder className="aspect-[3/4] w-full" />
               </div>
             </div>
           </Reveal>
