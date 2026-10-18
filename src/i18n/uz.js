@@ -3,7 +3,7 @@ export default {
   htmlLang: "uz",
 
   brand: {
-    city: "TOSHKEHT",
+    city: "TOSHKENT",
     tagline: "Shokoladli qulupnay • maxsus taʻm",
     followers: "49,9 ming",
     posts: "419",
